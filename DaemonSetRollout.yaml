@@ -9,7 +9,6 @@ spec:
       system: DaemonSetOne
   template:
     metadata:
-      creationTimestamp: null
       labels:
         system: DaemonSetOne
     spec:
@@ -33,11 +32,3 @@ spec:
       maxSurge: 0
       maxUnavailable: 1
     type: RollingUpdate
-status:
-  currentNumberScheduled: 4
-  desiredNumberScheduled: 4
-  numberAvailable: 4
-  numberMisscheduled: 0
-  numberReady: 4
-  observedGeneration: 4
-  updatedNumberScheduled: 4
